@@ -10,7 +10,7 @@ const Container = styled.article`
   align-items: center;
   flex-wrap: wrap;
   padding: 0 50px 30px 50px;
-  gap: 80px;
+  gap: clamp(30px, 5vw, 80px);
 `
 
 const Information = styled.section`
@@ -24,7 +24,7 @@ const Information = styled.section`
   
   p {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 
     span {
       font-weight: 300;
@@ -44,7 +44,7 @@ const Information = styled.section`
 
     span {
       padding: 0 25px;
-      border-radius: 5px;
+      border-radius: 3px;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     }
   }
@@ -52,7 +52,7 @@ const Information = styled.section`
 
 const ImageContainer = styled.figure`
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   
