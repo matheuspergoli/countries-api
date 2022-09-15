@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import useFetch from '../../Hooks/useFetch'
 import CircularLoading from '../CircularLoading/CircularLoading'
@@ -71,7 +72,9 @@ function Countries() {
       {data?.map((country: any) => (
         <CountryContainer key={country.name.common}>
           <CountryImage>
-            <img src={country.flags.png} alt={country.name.commom} />
+            <Link to={`/${country.cca3}`}>
+              <img loading="lazy" src={country.flags.png} alt={country.name.commom} />
+            </Link>
           </CountryImage>
           <CountryInformation>
             <h1>{country.name.common}</h1>
