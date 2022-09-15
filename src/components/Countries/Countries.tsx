@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import useFetch from '../../Hooks/useFetch'
+import CircularLoading from '../CircularLoading/CircularLoading'
 
 const Container = styled.main`
   display: flex;
@@ -55,7 +56,7 @@ const CountryInformation = styled.section`
 `
 
 function Countries() {
-  const { data, request } = useFetch()
+  const { data, loading, request } = useFetch()
 
   React.useEffect(() => {
     async function fetchCountry() {
@@ -64,6 +65,7 @@ function Countries() {
     fetchCountry()
   }, [])
 
+  if (loading === true) return <CircularLoading />
   return (
     <Container>
       {data?.map((country: any) => (
