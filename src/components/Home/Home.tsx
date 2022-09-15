@@ -25,8 +25,9 @@ const CountryImage = styled.figure`
 
   img {
     display: block;
+    width: 100%;
     height: 200px;
-    max-width: 100%;
+    object-fit: cover;
     border-radius: 5px 5px 0 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
