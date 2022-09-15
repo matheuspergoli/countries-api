@@ -1,13 +1,13 @@
 import React from 'react'
 
 function useFetch() {
-  const [data, setData] = React.useState<JSON | null>(null)
+  const [data, setData] = React.useState<null | Array<{}>>(null)
   const [error, setError] = React.useState<null | string>(null)
   const [loading, setLoading] = React.useState(false)
 
   const request = React.useCallback(async (url: string) => {
     let response: Response | null = null
-    let json: JSON | null = null
+    let json: null | Array<{}> = null
     try {
       setError(null)
       setLoading(true)

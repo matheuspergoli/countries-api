@@ -27,6 +27,7 @@
         "no-unsafe-finally": "off",
         "import/no-unresolved": "off",
         "react/jsx-filename-extension": "off",
-        "import/no-extraneous-dependencies": "off"
+        "import/no-extraneous-dependencies": "off",
+        "react/jsx-one-expression-per-line": "off"
     }
 }
