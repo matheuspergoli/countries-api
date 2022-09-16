@@ -11,6 +11,11 @@ const Container = styled.section`
   margin: 0 auto;
   max-width: 1440px;
   padding: 0 50px 30px 50px;
+
+  @media (max-width: 425px) {
+    padding: 0 20px 30px 20px;
+    gap: 30px;
+  }
 `
 
 const CountryContainer = styled.section`

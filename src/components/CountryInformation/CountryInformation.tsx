@@ -11,6 +11,10 @@ const Container = styled.article`
   flex-wrap: wrap;
   padding: 0 50px 30px 50px;
   gap: clamp(30px, 5vw, 80px);
+
+  @media (max-width: 425px) {
+    padding: 0 20px 30px 20px;
+  }
 `
 
 const Information = styled.section`
@@ -78,6 +82,10 @@ const ReturnBtn = styled(Link)`
   margin-bottom: 50px;
   text-decoration: none;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 425px) {
+    margin-left: 20px;
+  }
 
   svg {
     font-size: 1.5rem;
