@@ -118,9 +118,7 @@ function CountryInformation() {
               Border Countries:
               {country.borders ? country.borders.map((border: any) => (
                 <span key={border}>{border}</span>
-              )) : (
-                ' None'
-              )}
+              )) : ' None'}
             </p>
           </Information>
         </Container>
