@@ -102,9 +102,9 @@ function CountryInformation() {
         <Arrow /> Back
       </ReturnBtn>
       {data?.map((country: any) => (
-        <Container key={country.name}>
+        <Container key={country.name.common}>
           <ImageContainer>
-            <img loading="lazy" src={country.flags.png} alt={country.name.commom} />
+            <img loading="lazy" src={country.flags.png} alt={country.name.common} />
           </ImageContainer>
           <Information>
             <h1>{country.name.common}</h1>

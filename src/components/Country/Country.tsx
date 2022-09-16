@@ -61,7 +61,7 @@ function Country({ data }: any) {
         <CountryContainer key={country.name.common}>
           <CountryImage>
             <Link to={`/${country.cca3}`}>
-              <img loading="lazy" src={country.flags.png} alt={country.name.commom} />
+              <img loading="lazy" src={country.flags.png} alt={country.name.common} />
             </Link>
           </CountryImage>
           <CountryInformation>
