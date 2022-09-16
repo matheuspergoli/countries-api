@@ -28,7 +28,9 @@
         "import/no-unresolved": "off",
         "react/jsx-props-no-spreading": "off",
         "react/jsx-filename-extension": "off",
+        "import/prefer-default-export": "off",
         "import/no-extraneous-dependencies": "off",
-        "react/jsx-one-expression-per-line": "off"
+        "react/jsx-one-expression-per-line": "off",
+        "react/jsx-no-constructed-context-values": "off"
     }
 }
