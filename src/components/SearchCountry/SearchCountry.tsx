@@ -9,6 +9,7 @@ const FormContainer = styled.form`
   margin-left: 50px;
   padding: 10px 20px;
   border-radius: 5px;
+  margin-bottom: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
   @media (max-width: 480px) {
@@ -43,10 +44,12 @@ function SearchCountry() {
 
   React.useEffect(() => {
     async function fetchCountry() {
-      await request(`https://restcountries.com/v3.1/name/${value}`)
+      if (value.length > 3) {
+        await request(`https://restcountries.com/v3.1/name/${value}`)
+      }
     }
     fetchCountry()
-  }, [])
+  }, [value])
 
   return (
     <>
@@ -62,7 +65,9 @@ function SearchCountry() {
         </FormGroup>
       </FormContainer>
 
-      <Country data={data} />
+      {value.length > 3 && (
+        <Country data={data} />
+      )}
     </>
   )
 }
