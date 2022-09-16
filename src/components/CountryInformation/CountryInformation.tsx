@@ -116,7 +116,7 @@ function CountryInformation() {
             <p>Top Level Domain: <span>{country.tld[0]}</span></p>
             <p className="borders">
               Border Countries:
-              {country.borders.map((border: any) => (
+              {country.borders && country.borders.map((border: any) => (
                 <span key={border}>{border}</span>
               ))}
             </p>
