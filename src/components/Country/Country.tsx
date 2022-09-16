@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-const Container = styled.main`
+const Container = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-evenly;

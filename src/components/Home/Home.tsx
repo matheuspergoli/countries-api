@@ -4,10 +4,10 @@ import SearchCountry from '../SearchCountry/SearchCountry'
 
 function Home() {
   return (
-    <div>
+    <>
       <SearchCountry />
       <Countries />
-    </div>
+    </>
   )
 }
 
